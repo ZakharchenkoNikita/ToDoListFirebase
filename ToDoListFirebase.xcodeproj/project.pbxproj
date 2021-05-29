@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,9 @@
 		111CAC0326558BCA00010A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111CAC0226558BCA00010A48 /* Assets.xcassets */; };
 		111CAC0626558BCA00010A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111CAC0426558BCA00010A48 /* LaunchScreen.storyboard */; };
 		111CAC0E2655998D00010A48 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111CAC0D2655998D00010A48 /* TasksViewController.swift */; };
-		111CAC1326559FB200010A48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 111CAC1226559FB200010A48 /* GoogleService-Info.plist */; };
+		11C406A8266238B900B36A82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11C406A7266238B900B36A82 /* GoogleService-Info.plist */; };
+		11F31AF7265EC0D000C3C06E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F31AF6265EC0D000C3C06E /* Task.swift */; };
+		11F31AF9265EC0DA00C3C06E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F31AF8265EC0DA00C3C06E /* Users.swift */; };
 		2483EE46DBEC308FFF7A05AB /* Pods_ToDoListFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A028CB1865EB9C0FB58637F /* Pods_ToDoListFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +30,9 @@
 		111CAC0526558BCA00010A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111CAC0726558BCA00010A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		111CAC0D2655998D00010A48 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
-		111CAC1226559FB200010A48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		11C406A7266238B900B36A82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		11F31AF6265EC0D000C3C06E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		11F31AF8265EC0DA00C3C06E /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		5A028CB1865EB9C0FB58637F /* Pods_ToDoListFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoListFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EA37DD13488A94EFAC6568 /* Pods-ToDoListFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListFirebase.debug.xcconfig"; path = "Target Support Files/Pods-ToDoListFirebase/Pods-ToDoListFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		F4E3FFF5C0CA6919B1E3A12F /* Pods-ToDoListFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListFirebase.release.xcconfig"; path = "Target Support Files/Pods-ToDoListFirebase/Pods-ToDoListFirebase.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 		111CABF826558BC800010A48 /* ToDoListFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				11F31AFA265EC0F400C3C06E /* Models */,
 				111CAC1126559A0F00010A48 /* View */,
 				111CAC10265599E600010A48 /* Controller */,
 				111CAC0F265599C500010A48 /* Supporting files */,
@@ -81,7 +86,7 @@
 				111CABFB26558BC800010A48 /* SceneDelegate.swift */,
 				111CAC0226558BCA00010A48 /* Assets.xcassets */,
 				111CAC0726558BCA00010A48 /* Info.plist */,
-				111CAC1226559FB200010A48 /* GoogleService-Info.plist */,
+				11C406A7266238B900B36A82 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			children = (
 				111CABFD26558BC800010A48 /* LoginViewController.swift */,
 				111CAC0D2655998D00010A48 /* TasksViewController.swift */,
+				11C406A9266273D100B36A82 /* New Group */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,13 +110,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		11C406A9266273D100B36A82 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		11F31AFA265EC0F400C3C06E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11F31AF6265EC0D000C3C06E /* Task.swift */,
+				11F31AF8265EC0DA00C3C06E /* Users.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		8E291BF5FBC955A14F1347EE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E8EA37DD13488A94EFAC6568 /* Pods-ToDoListFirebase.debug.xcconfig */,
 				F4E3FFF5C0CA6919B1E3A12F /* Pods-ToDoListFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -182,7 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				111CAC0626558BCA00010A48 /* LaunchScreen.storyboard in Resources */,
-				111CAC1326559FB200010A48 /* GoogleService-Info.plist in Resources */,
+				11C406A8266238B900B36A82 /* GoogleService-Info.plist in Resources */,
 				111CAC0326558BCA00010A48 /* Assets.xcassets in Resources */,
 				111CAC0126558BC800010A48 /* Main.storyboard in Resources */,
 			);
@@ -239,6 +260,8 @@
 			files = (
 				111CABFE26558BC800010A48 /* LoginViewController.swift in Sources */,
 				111CAC0E2655998D00010A48 /* TasksViewController.swift in Sources */,
+				11F31AF9265EC0DA00C3C06E /* Users.swift in Sources */,
+				11F31AF7265EC0D000C3C06E /* Task.swift in Sources */,
 				111CABFA26558BC800010A48 /* AppDelegate.swift in Sources */,
 				111CABFC26558BC800010A48 /* SceneDelegate.swift in Sources */,
 			);
